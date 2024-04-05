@@ -6,3 +6,4 @@ Other:  1. This can be applied to any Symbol and any asset class as long as ther
     	  2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
     	  3. Application file is for getting Theoretical performance and Optimized values: Exploratory file is for Use as an "indicator" in order to see Probability for entire time-series
     	  4. Application file must be set up as a STRATEGY; Exploratory must be set up as INDICATOR
+          5. Risk management of any sort is not added in Applicaton file
