@@ -1,0 +1,16 @@
+Inputs: thresh(1), stp(100);
+
+
+value1 = close - open;
+
+if thresh < 0 then Begin
+	if value1 <= thresh then Sellshort this bar;
+end;
+
+if thresh > 0 then Begin
+	if value1[1] >= thresh then buy this bar;
+end;
+
+Setstoploss(stp);
+if Barssinceentry = 1 and Marketposition > 0 then sell this bar;
+if Barssinceentry = 1 and Marketposition < 0 then Buytocover this bar;
