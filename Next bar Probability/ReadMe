@@ -1,0 +1,8 @@
+This is a frequency analysis which attempts to identify the probability of the price of a financial instrument falling/rising given the fluctuation of the price at the previous time-step.
+
+Ex: what is the probability of the price of AAPL (Symbol of Apple stock) falling any amount given that the previous time-step had a fluctuation of -1
+
+Other:  1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+    	  2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+    	  3. Application file is for getting Theoretical performance and Optimized values: Exploratory file is for Use as an "indicator" in order to see Probability for entire time-series
+    	  4. Application file must be set up as a STRATEGY; Exploratory must be set up as INDICATOR
