@@ -8,7 +8,7 @@ The T3 Tillson Moving Average is an extension of the Exponential Moving Average 
 It was developed by Tim Tillson and introduced in the Stocks and Commodities magazine in 1998. The "T3" stands for "Tillson's Moving Average, exponential, triple smoothed".
 
 
-Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+Note:     1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
    	    2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
    	    3. This must be set up as INDICATOR
 
