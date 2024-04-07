@@ -1,0 +1,14 @@
+inputs: Price(Close), Length(9);
+
+vars: Filt(0), coef(0), count(0);
+		
+
+Filt = 0;
+coef = 0;
+For count = 1 to Length Begin
+	Filt = Filt + (1 - Cosine(360 * count / (Length + 1))) * Price[count - 1];
+	coef = coef + (1 - Cosine(360 * count / (Length + 1)));
+End;
+If coef <> 0 Then value1 = filt / coef;
+
+plot1(value1);
