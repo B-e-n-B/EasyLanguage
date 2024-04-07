@@ -2,6 +2,6 @@
 The Volume Weighted Moving Average (VWMA) is a technical analysis tool used to smooth out price data and highlight trends by giving more weight to periods with higher trading volume. 
 It's similar to the Simple Moving Average (SMA), but while SMA gives equal weight to each period, VWMA assigns more importance to periods with higher volume.
 
-Note:     1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+Note:       1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
    	      2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
    	      3. This must be set up as INDICATOR
