@@ -1,1 +1,13 @@
--What is Lag
+-What is lag?
+In the context of moving averages, "lag" is the delay between changes in actual data and the movement of the moving average line.
+For instance, if you are using a 10-period (The period being minutes, hours, or days) moving average, you are getting the average price of the last 10 periods;
+if the data suddenly changes, the moving average wouldn't fluctuate as much because it is still using older data to calculate the moving average line...this is called lag.
+
+-What is the Hull Moving average?
+The Hull Moving Average (HMA) was developed by Alan Hull and first introduced in his book "Active Investing" in 2005.
+The HMA attempts to address the shortcomings of traditional moving averages by reducing lag and providing smoother signals.
+
+
+Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+   	    2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+   	    3. This must be set up as INDICATOR
