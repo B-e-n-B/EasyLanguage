@@ -1,1 +1,17 @@
-ddd
+-What is the Hann Moving average?
+The Hanning Moving Average, is a type of moving average that incorporates the Hann (or Hanning) window function into its calculation.
+The Hann window is a type of tapering window function used in signal processing and data analysis to reduce spectral leakage when performing operations such as filtering and smoothing.
+
+-What is spectral leakage?
+Spectral leakage is a phenomenon in signal processing where energy from a specific frequency component "leaks" into other frequency-
+components when performing operations such as Fourier analysis or filtering.
+It occurs due to the finite duration (or windowing) of the signal being analyzed.
+
+-How does windowing fix this?
+Windowing helps fix spectral leakage by tapering the signal smoothly to zero at its endpoints before performing spectral analysis.
+In signal processing, windowing functions, such as the Hann, Hamming, or Blackman-Harris windows, gradually reduce the amplitude of the signal near its edges.
+This tapering minimizes the impact of discontinuities and reduces spectral leakage.
+
+Note:  1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+  	   2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+  	 	 3. This must be set up as INDICATOR
