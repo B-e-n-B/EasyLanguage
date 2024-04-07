@@ -1,3 +1,14 @@
+-What is lag?
+In the context of moving averages, "lag" is the delay between changes in actual data and the movement of the moving average line.
+For instance, if you are using a 10-period (The period being minutes, hours, or days) moving average, you are getting the average price of the last 10 periods;
+if the data suddenly changes, the moving average wouldn't fluctuate as much because it is still using older data to calculate the moving average line...this is called lag.
 
+-What is the T3 Tillson Moving Average?
 The T3 Tillson Moving Average is an extension of the Exponential Moving Average (EMA) designed to reduce lag and provide smoother signals for trends compared to traditional moving averages.
 It was developed by Tim Tillson and introduced in the Stocks and Commodities magazine in 1998. The "T3" stands for "Tillson's Moving Average, exponential, triple smoothed".
+
+
+Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+   	    2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+   	    3. This must be set up as INDICATOR
+
