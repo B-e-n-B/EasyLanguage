@@ -1,1 +1,8 @@
-**What is Lag?**
+-What is lag?
+In the context of moving averages, "lag" is the delay between changes in actual data and the movement of the moving average line. 
+For instance, if you are useing a 10-period (The period being minutes, hours, or days) moving average, you are getting the average price of the last 10 periods;
+if the data suddenly changes, the moving average wouldnt fluctuate as much because it is still using older data to calculate the moving average line...this is called lag.
+
+-How does the Zero Lag Moving Avgerage (ZLMA) attempt to fix this?
+The ZLMA is john Ehlers' creation for the purpose of reducing lag (obviosly) which is present in other moving averages.
+The way Ehlers does this is by removing the data from "lag" days ago thus removing (or attempting to) the cumulative effect of the moving average.
