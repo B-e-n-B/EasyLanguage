@@ -1,0 +1,17 @@
+inputs: Price(Close), Length(9);
+		
+vars: HullMovingAvg(0), HalfLength(0), SqRtLength(0);
+
+
+HalfLength = IntPortion( Length * 0.5 ) astype int;
+SqRtLength = IntPortion( SquareRoot( Length ) ) astype int;
+	
+if Length > 1 then
+	HullMovingAvg = WAverage( 2 * WAverage( Price, HalfLength  ) - WAverage( Price, Length ), SqRtLength );
+	
+Plot1(HullMovingAvg);
+
+Setplotcolor(1, rgb(239, 66, 245));
+
+
+	
