@@ -2,8 +2,6 @@ inputs: Price(Close), Length(9);
 
 vars: b1(0), xe1(0), xe2(0), xe3(0), xe4(0), xe5(0), xe6(0), c1(0), c2(0), c3(0), c4(0);
 		
-value1 = iff(Average(Volume, Length) <> 0, Average(Price * Volume, Length) / Average(Volume, Length), 0);
-
 b1 = 0.84;
 xe1 = XAverage(Price, Length);
 xe2 = XAverage(xe1, Length);
