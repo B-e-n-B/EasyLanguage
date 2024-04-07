@@ -8,6 +8,6 @@ The Hull Moving Average (HMA) was developed by Alan Hull and first introduced in
 The HMA attempts to address the shortcomings of traditional moving averages by reducing lag and providing smoother signals.
 
 
-Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+Note:     1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
    	    2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
    	    3. This must be set up as INDICATOR
