@@ -6,3 +6,9 @@ if the data suddenly changes, the moving average wouldnt fluctuate as much becau
 -How does the Zero Lag Moving Avgerage (ZLMA) attempt to fix this?
 The ZLMA is john Ehlers' creation for the purpose of reducing lag (obviosly) which is present in other moving averages.
 The way Ehlers does this is by removing the data from "lag" days ago thus removing (or attempting to) the cumulative effect of the moving average.
+
+
+Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+    	  2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+    	  3. This must be set up as INDICATOR
+
