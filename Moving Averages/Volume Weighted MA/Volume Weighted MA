@@ -1,0 +1,5 @@
+inputs: Price(Close), Length(9);
+		
+value1 = iff(Average(Volume, Length) <> 0, Average(Price * Volume, Length) / Average(Volume, Length), 0);
+
+plot1(value1);
