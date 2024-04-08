@@ -1,1 +1,7 @@
-f
+
+
+A moving average using a modification of the 2nd derivative of the arc tangent function as kernel has been presented, 
+the kernel is parametric and allow the user to switch from a low-lag moving average where the lag can be increased/decreased to a really smooth moving average.
+
+As you can see once you get familiar with a function shape, you can know what would be the characteristics of a moving average using it as kernel, 
+this is where you start getting intimate with moving averages. 
