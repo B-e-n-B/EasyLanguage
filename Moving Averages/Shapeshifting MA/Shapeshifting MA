@@ -1,0 +1,35 @@
+// Converted from Pinescript to Easylanguage from alexgrover on tradingview
+
+Inputs:
+	src(Close),
+    Length(50),
+    Pow(4),
+    Smooth(false);
+Vars:
+	i(0),
+    sum(0.0),
+    sumw(0.0),
+    alpha(0),
+    power1(0),
+    n(0),
+    w(0),
+    x(0),
+    filt(0.0);
+// Adjust alpha and power based on the Smooth input
+alpha = iff(Smooth, 2, 1);
+power1 = iff(Smooth, Pow - Mod(Pow, 2), Pow);
+// Have variables be reset so that it doesnt constantly stack
+sum = 0;
+sumw = 0;
+// Loop through the length and compute the weights and sums
+For i = 0 to Length - 1 Begin
+    x = i / (Length - 1);
+    n = iff(Smooth, (-1 + x * 2), x);
+    w = 1 - 2 * Power(n, alpha) / (Power(n, power1) + 1);
+    sumw = sumw + w;
+    sum = sum + src[i] * w;
+End;
+// Compute the final filtered value
+filt = sum / sumw;
+// Plot the result
+Plot1(filt, "Plot", iff(filt > filt[1], green, red));
