@@ -1,7 +1,15 @@
+-What is lag?
+In the context of moving averages, "lag" is the delay between changes in actual data and the movement of the moving average line.
+For instance, if you are using a 10-period (The period being minutes, hours, or days) moving average, you are getting the average price of the last 10 periods;
+if the data suddenly changes, the moving average wouldn't fluctuate as much because it is still using older data to calculate the moving average line...this is called lag.
 
-
-A moving average using a modification of the 2nd derivative of the arc tangent function as kernel has been presented, 
+-What is the Shapeshifting Moving average?
+The Shapeshifting MA is a moving average using a modification of the 2nd derivative of the arc tangent function as kernel (set of weights).
 the kernel is parametric and allow the user to switch from a low-lag moving average where the lag can be increased/decreased to a really smooth moving average.
 
-As you can see once you get familiar with a function shape, you can know what would be the characteristics of a moving average using it as kernel, 
-this is where you start getting intimate with moving averages. 
+Note:   1. This can be applied to any Symbol and any asset class as long as there is a time-series containing OHLC data
+   	    2. This can be applied to any timeframe Ex: 1min chart, 20min chart, 1hour chart, Daily chart
+   	    3. This must be set up as INDICATOR
+
+
+
